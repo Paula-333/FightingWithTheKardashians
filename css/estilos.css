@@ -1,0 +1,32 @@
+body {
+    background: #f7bdb3;
+}
+
+#players{
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+    
+
+}
+.player1 img {
+    width: 9em;
+    height: 26em;
+   
+
+}
+.player2 img {
+    width: 9em;
+    height: 26em;
+
+}
+.player3 img {
+    width: 10em;
+    height: 26em;
+
+}
+.player4 img {
+    width: 8em;
+    height: 26em;
+
+}
