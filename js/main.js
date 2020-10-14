@@ -20,7 +20,7 @@
 
  const clickPlayer = (argumento1) =>{
      
-     let divTexto = document.getElementById('players');
+     let divTexto = document.getElementById('textoPlayers');
     switch(argumento1){
         case 'Kourtney':
             divTexto.innerHTML = 'KOURTNEY';

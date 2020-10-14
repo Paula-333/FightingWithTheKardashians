@@ -2,10 +2,17 @@ body {
     background: #f7bdb3;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #players{
     display: flex;
     justify-content: center;
-    margin: 3em;
+    margin: 7em;
     
 
 }
@@ -29,4 +36,11 @@ body {
     width: 8em;
     height: 26em;
 
+}
+#textoPlayers{
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
