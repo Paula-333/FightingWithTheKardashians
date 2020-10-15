@@ -9,6 +9,7 @@ class Player {
     this.handicap = handicap;
     }
     punch(enemigo){
+        document.getElementById('players')
     let punch = (this.ataque * this.speed) - enemigo.defensa
     enemigo.vida -= punch;
     }
@@ -24,91 +25,20 @@ class Player {
     
     }
     
+   
+    let Kourt = new Player("Kourt",60,50,60,15,25);
+    let Kim = new Player("Kim",55,50,55,20,20);
+    let Khloe = new Player("Khloe",65,55,65,10,25);
+    let Kylie = new Player("Kylie",60,45,70,15,20);
     
-    let Kourt = new Player("Kourt",85,75,80,50);
-    let Kim = new Player("Kim",80,80,85,60);
-    let Khloe = new Player("Khloe", 85,85,85,55);
-    let Kylie = new Player("Kylie",70,80,90,65);
+  
     
+    //let allplayers = {
+    //"p1": Kourt,
+    //"p2": Kim,
+    //"p3": Khloe,
+    //"p4": Kylie,
+    //}
     
-    
-    let allplayers = {
-    "1": Kourt,
-    "2": Kim,
-    "3": Khloe,
-    "4": Kylie,
-    }
-    
-    
-    let juego = {
-    
-    turno: 0,
-    player1: "1",
-    player2: "2",
-    ganador: "2",
-    
-    resetearLucha(){
-    
-    },
-    
-    turnoLucha(){
-    
-    },
-    }
-    
-    
-    
-    /* class Player extends Luchador{
-    constructor(nombre) {
-    super(nombre,"Kourt");
-    this.arma("bolso");
-    }
-    }
-    
-    class Player extends Luchador{
-    constructor(nombre) {
-    super(nombre,"Kim");
-    this.arma("zapato");
-    }
-    }
-    
-    class Player extends Luchador{
-    constructor(nombre) {
-    super(nombre,"Khloe");
-    this.arma("balon");
-    }
-    }
-    
-    class Player extends Luchador{
-    constructor(nombre) {
-    super(nombre,"Kylie");
-    this.arma("pintalabios");
-    }
-    } */
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //console.log(Kourt);
     
     

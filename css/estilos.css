@@ -2,17 +2,21 @@ body {
     background: #f7bdb3;
 }
 
-header{
+h2{
     display: flex;
     justify-content: center;
-    font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h4{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
 }
 
 #players{
     display: flex;
     justify-content: center;
-    margin: 7em;
+    margin: 3em;
     
 
 }
@@ -22,21 +26,25 @@ header{
    
 
 }
+
 .player2 img {
     width: 9em;
     height: 26em;
 
 }
+
 .player3 img {
     width: 10em;
     height: 26em;
 
 }
+
 .player4 img {
     width: 8em;
     height: 26em;
 
 }
+
 #textoPlayers{
     display: flex;
     justify-content: center;
