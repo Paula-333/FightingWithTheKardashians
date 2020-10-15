@@ -1,5 +1,6 @@
 class Player {
     constructor(nombre, ataque, defensa, speed, lucky, handicap) {
+    
     this.nombre = nombre;
     this.vida = 300;
     this.ataque = ataque;
@@ -8,22 +9,19 @@ class Player {
     this.lucky = lucky;
     this.handicap = handicap;
     }
+
     punch(enemigo){
         document.getElementById('players')
-    let punch = (this.ataque * this.speed) - enemigo.defensa
+    let punch = (this.ataque + this.speed) / (this.lucky - this.handicap);
     enemigo.vida -= punch;
     }
     
     defender(enemigo){
-    let defender = (this.ataque + this.lucky);
+    let defender = (this.lucky + this.defensa) - (this.handicap);
     enemigo.vida -= defender;
     }
     
-    esquivar(enemigo){
-    
-    }
-    
-    }
+}
     
    
     let Kourt = new Player("Kourt",60,50,60,15,25);
@@ -31,7 +29,17 @@ class Player {
     let Khloe = new Player("Khloe",65,55,65,10,25);
     let Kylie = new Player("Kylie",60,45,70,15,20);
     
-  
+console.log('START THE FIGHT')
+console.log('Kourt:', Kourt.vida)
+console.log('Kylie:', Kylie.vida)
+Kylie.punch(Kourt)
+console.log("EMPIEZA GOLPEA A KOURT");
+console.log("Kylie:", Kylie.vida);
+console.log("Kourt", Kourt.vida);
+Kourt.defender(Kylie)
+console.log("EMPIEZA GOLPEA A KYLIE");
+console.log("Kylie:", Kylie.vida);
+console.log("Kourt", Kourt.vida);
     
     //let allplayers = {
     //"p1": Kourt,
