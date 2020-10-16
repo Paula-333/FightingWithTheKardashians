@@ -23,7 +23,6 @@ class Player {
     
 }
     
-   
     let Kourt = new Player("Kourt",60,50,60,15,25);
     let Kim = new Player("Kim",55,50,55,20,20);
     let Khloe = new Player("Khloe",65,55,65,10,25);
