@@ -1,7 +1,6 @@
 
 let arrayPlayers = [];
 document.getElementById("botonFight").style.visibility = "hidden";
-
 const selectPlayer = (player) => { 
     
     if(arrayPlayers.length < 2){
@@ -10,6 +9,7 @@ const selectPlayer = (player) => {
         
     if(arrayPlayers.length == 2){
             console.log("Ya has escogido los 2 personajes",arrayPlayers);
+            document.getElementById("botonStart").disabled = false;
             return;
         }
         console.log(arrayPlayers);
@@ -26,23 +26,15 @@ let escogidoKylie = false;
 
 if(arrayPlayers.includes('Kourtney')){
     escogidoKourtney = true;
-}else {
-    escogidoKourtney = false;
-} 
+}
 if(arrayPlayers.includes('Kim')){
     escogidoKim = true;
-}else {
-    escogidoKim = false;
-} 
+}
 if(arrayPlayers.includes('Khloe')){
     escogidoKhloe = true;
-}else {
-    escogidoKhloe = false;
-}   
+}  
 if(arrayPlayers.includes('Kylie')){
     escogidoKylie = true;
-}else{
-    escogidoKylie = false
 }
 
 if(!escogidoKourtney){
