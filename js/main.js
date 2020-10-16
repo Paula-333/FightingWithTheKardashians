@@ -14,3 +14,7 @@ const selectPlayer = (player) => {
         console.log(arrayPlayers);
         console.log(arrayPlayers.length);
 }
+
+
+
+

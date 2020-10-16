@@ -29,7 +29,7 @@ class Player {
     let Khloe = new Player("Khloe",65,55,65,10,25);
     let Kylie = new Player("Kylie",60,45,70,15,20);
     
-console.log('START THE FIGHT')
+/*console.log('START THE FIGHT')
 console.log('Kourt:', Kourt.vida)
 console.log('Kylie:', Kylie.vida)
 Kylie.punch(Kourt)
@@ -39,7 +39,7 @@ console.log("Kourt", Kourt.vida);
 Kourt.defender(Kylie)
 console.log("EMPIEZA GOLPEA A KYLIE");
 console.log("Kylie:", Kylie.vida);
-console.log("Kourt", Kourt.vida);
+console.log("Kourt", Kourt.vida);*/
     
     //let allplayers = {
     //"p1": Kourt,

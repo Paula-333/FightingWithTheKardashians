@@ -7,15 +7,15 @@
 <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-       <h2> FIGHTING WITH THE KARDASHIANS!</h2>
-       <h4>Choose your two favorite!</h4>
-    </header>
+    
+    <div><a class="letra" href="https://fontmeme.com/fonts/gw-two-font/"><img src="https://fontmeme.com/permalink/201016/204531e919dc613ef5696f809d9821f9.png" alt="gw-two-font" border="0"></a></div>
+    <div><h4>CHOOSE YOUR TWO FAVORITE AND CLICK START</h4></div>
 
-    <div></div>
-    <div id="textoPlayers"></div>
+<!--...BOTON START...-->
 
-    <button id="fight" onclick="divColorPrimero('fight')"></button>
+    <button class="start" id="fight" onclick="botonStart('start')">START</button>
+
+    
 
     <div id="players">
         
@@ -26,8 +26,24 @@
         <div onclick="selectPlayer('Khloe')" class="player3" id="p3"><img src="img/Khloe.png"></div>
         
         <div onclick="selectPlayer('Kylie')" class="player4" id="p4"><img src="img/Kylie.png"></div>
-
+       
     </div>
+
+    <div class="segunda pantalla" id="partida" style="display:none">
+
+        <div class="player1" id="p1"><img src="img/Kourtney.png"></div>
+        
+        <div class="player2" id="p2"><img src="img/Kim.png"></div>
+        
+        <div class="player3" id="p3"><img src="img/Khloe.png"></div>
+        
+        <div class="player4" id="p4"><img src="img/Kylie.png"></div>
+
+        <div class="startPartida" id="fight" onclick=""></div>
+    
+    </div>
+
+    <div class="winner"></div>
 
     
 

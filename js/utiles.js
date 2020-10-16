@@ -1,4 +1,4 @@
-let divColorPrimero = document.getElementById("fight");
+/*let divColorPrimero = document.getElementById("fight");
      const colorRandom = (min, max) =>{
          return Math.floor(Math.random()*(max - min) + min);
     }
@@ -18,4 +18,4 @@ let divColorPrimero = document.getElementById("fight");
         case 4:
             divColorPrimero.style.backgroundColor = 'green'
         break;
-    } 
+    } */
