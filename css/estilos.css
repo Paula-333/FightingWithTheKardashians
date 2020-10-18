@@ -65,20 +65,49 @@ h4{
     width: 7em;
     height: 3em;
     background-color: #ba4568;
-   position: relative;
-   top: auto;
-   left: 43em;
-   color: #f7bdb3;
+    position: relative;
+    top: auto;
+    left: 43em;
+    color: #f7bdb3;
 }
 .fight{
     width: 7em;
     height: 3em;
     background-color: #ba4568;
-   position: relative;
-   top: auto;
-   left: 35.5em;
-   color: #f7bdb3;
+    position: relative;
+    top: auto;
+    left: 35.5em;
+    color: #f7bdb3;
 }
 
+#life1{
+    position: relative;
+    top: -35em;
+    left: 35.5em;
+}
 
-.imagen:hover {filter: grayscale(80%);}
+#life2{
+    position: relative;
+    top: -35em;
+    left: 35.5em;
+    
+}
+
+.botonP1{
+    width: 3em;
+    height: 1em;
+    background-color: #ba4568;
+    position: relative;
+    top: -42em;
+    left: 43em;
+    color: #f7bdb3;
+}
+.botonP2{
+    width: 3em;
+    height: 1em;
+    background-color: #ba4568;
+    position: relative;
+    top: -42em;
+    left: 43em;
+    color: #f7bdb3;
+}
