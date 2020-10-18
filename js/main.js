@@ -1,5 +1,14 @@
-//Elegir personajes
+//VARIABLES
 let arrayPlayers = [];
+let playersDiv = document.getElementById('players');
+let life1 = document.getElementById('life1');
+let life2 = document.getElementById('life2');
+let winnerDiv = document.getElementById('winner');
+let textWinner = document.getElementById('textWin');
+
+//PERSONAJES
+
+
 class Player {
     constructor(nombre, ataque, defensa) {
     
@@ -8,12 +17,13 @@ class Player {
     this.ataque = ataque;
     this.defensa = defensa;
     }
+
 }
     
-    let Kourt = new Player("Kourt",60,50);
+    let Kourt = new Player("Kourt",55,50);
     let Kim = new Player("Kim",55,50);
-    let Khloe = new Player("Khloe",65,55);
-    let Kylie = new Player("Kylie",60,45);
+    let Khloe = new Player("Khloe",55,50);
+    let Kylie = new Player("Kylie",55,50);
 
 
 //document.getElementById("botonFight").style.visibility = "hidden";
@@ -41,6 +51,8 @@ const selectPlayer = (player) => {
         console.log(arrayPlayers.length);
 }
 
+}
+
 //Al elegir los personajes se esconden los no selecionados al pulsar start
 
 function botonStart () {
@@ -49,24 +61,19 @@ let escogidoKim = false;
 let escogidoKhloe = false;
 let escogidoKylie = false;
 
-if(arrayPlayers.includes('Kourtney')){
-    escogidoKourtney = true;
-    arrayPlayers.push(Kourt);
-}
-if(arrayPlayers.includes('Kim')){
-    escogidoKim = true;
-    arrayPlayers.push(Kim);
-
-}
-if(arrayPlayers.includes('Khloe')){
-    escogidoKhloe = true;
-    arrayPlayers.push(Khloe);
-
-}  
-if(arrayPlayers.includes('Kylie')){
-    escogidoKylie = true;
-    arrayPlayers.push(Kylie);
-
+for(i = 0; i < arrayPlayers.length; i++){
+    if(arrayPlayers[i].nombre.includes('Kourt')){
+        escogidoKourtney = true;
+    }
+    if(arrayPlayers[i].nombre.includes('Kim')){
+        escogidoKim = true;    
+    }
+    if(arrayPlayers[i].nombre.includes('Khloe')){
+        escogidoKhloe = true;    
+    }  
+    if(arrayPlayers[i].nombre.includes('Kylie')){
+        escogidoKylie = true;    
+    }
 }
 
 if(!escogidoKourtney){
@@ -92,36 +99,33 @@ document.getElementById("botonStart").style.visibility = "hidden";
 }
 
 //JUGADORES
-let playersDiv = document.getElementById('players');
-let life1 = document.getElementById('life1');
-let life2 = document.getElementById('life2');
-let winner = document.getElementById('winner');
+
 
 
     function fight (atack) {
      
         if (atack == 0){
-            if ((life2.value + arrayPlayers[0].defensa)- arrayPlayers[1].ataque>=0){life2.value -= arrayPlayers[1].ataque - arrayPlayers[0].defensa;
+            if ((life2.value)- arrayPlayers[1].ataque>=0){
+                life2.value -= arrayPlayers[1].ataque - arrayPlayers[0].defensa;
             }else{
                 life2.value = 0;
                 finish (0);
             }
     
             }else{
-                if ((life1.value + arrayPlayers[1].defensa)- arrayPlayers[0].ataque>=0){life1.value -= arrayPlayers[0].ataque - arrayPlayers[1].defensa;
+                if ((life1.value)- arrayPlayers[0].ataque>=0){
+                    life1.value -= arrayPlayers[0].ataque - arrayPlayers[1].defensa;
                 }else{
-                    life1.value = 0;
+                    life2.value = 0;
                     finish (1);
                 }
         }
     }    
 
 
-function finish () {
+function finish (win) {
     playersDiv.style.visibility = 'hidden';
-    winner.style.visibility = 'visible';
+    winnerDiv.style.visibility = 'visible';
+    textWinner.textContent += arrayPlayers[win].nombre;
     
-
-    
-}
 }
