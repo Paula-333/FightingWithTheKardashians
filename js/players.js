@@ -1,3 +1,9 @@
+//JUGADORES
+let allPlayer = [];
+let life1 = document.getElementById('life1');
+let life2 = document.getElementById('life2');
+let winner = document.getElementById('winner');
+
 class Player {
     constructor(nombre, ataque, defensa, speed, lucky, handicap) {
     
@@ -10,16 +16,16 @@ class Player {
     this.handicap = handicap;
     }
 
-    punch(enemigo){
+  /*  punch(enemigo){
         document.getElementById('players')
     let punch = (this.ataque + this.speed) / (this.lucky - this.handicap);
     enemigo.vida -= punch;
     }
     
     defender(enemigo){
-    let defender = (this.lucky + this.defensa) - (this.handicap);
+    let defender = (this.lucky + this.handicap) - (this.handicap);
     enemigo.vida -= defender;
-    }
+    }*/
     
 }
     
@@ -27,25 +33,27 @@ class Player {
     let Kim = new Player("Kim",55,50,55,20,20);
     let Khloe = new Player("Khloe",65,55,65,10,25);
     let Kylie = new Player("Kylie",60,45,70,15,20);
+
+  function fight (atack) {
+     
+    if (atack == 0){
+        if ((life1.value + allPlayer[0].handicap)- allPlayer[1].ataque>=0){life2.value -= allPlayer[1].ataque - allPlayer[0].handicap;
+        }else{
+            life1.value = 0;
+            finish (0);
+        }
+
+        }else{
+            if ((life2.value + allPlayer[1].handicap)- allPlayer[0].ataque>=0){life2.value -= allPlayer[0].ataque - allPlayer[1].handicap;
+            }else{
+                life1.value = 0;
+                finish (1);
+            }
+    }
     
-/*console.log('START THE FIGHT')
-console.log('Kourt:', Kourt.vida)
-console.log('Kylie:', Kylie.vida)
-Kylie.punch(Kourt)
-console.log("EMPIEZA GOLPEA A KOURT");
-console.log("Kylie:", Kylie.vida);
-console.log("Kourt", Kourt.vida);
-Kourt.defender(Kylie)
-console.log("EMPIEZA GOLPEA A KYLIE");
-console.log("Kylie:", Kylie.vida);
-console.log("Kourt", Kourt.vida);*/
+}
+
+function finish (winner) {
+    winner.style.visibility = 'visable';
     
-    //let allplayers = {
-    //"p1": Kourt,
-    //"p2": Kim,
-    //"p3": Khloe,
-    //"p4": Kylie,
-    //}
-    
-    
-    
+}

@@ -23,16 +23,17 @@ h4{
 #players{
     display: flex;
     justify-content: space-evenly;
-
     margin: 3em;
     
-
 }
+#players :hover{ 
+    filter: grayscale(70%); 
+}
+
 .player1 img {
     width: 9em;
     height: 26em;
    
-
 }
 
 .player2 img {
@@ -69,7 +70,15 @@ h4{
    left: 43em;
    color: #f7bdb3;
 }
-
-.segundaPantalla{
-    display: none;
+.fight{
+    width: 7em;
+    height: 3em;
+    background-color: #ba4568;
+   position: relative;
+   top: auto;
+   left: 35.5em;
+   color: #f7bdb3;
 }
+
+
+.imagen:hover {filter: grayscale(80%);}

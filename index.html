@@ -12,11 +12,12 @@
     <div id="choose"><h4>CHOOSE YOUR TWO FAVORITE AND CLICK START</h4></div>
 
 <!--...BOTON START...-->
-
     <button class="start" id="botonStart" onclick="botonStart()" disabled>START</button>
-    <button class="start" id="botonFight" onclick="">FIGHT</button>
 
-    
+<!--...BOTON FIGHT...
+    <button class="fight" id="botonFight" onclick="fight()">FIGHT</button>-->
+
+<!--PANTALLA-->
 
     <div id="players">
         
@@ -30,11 +31,29 @@
        
     </div>
 
+<!--PELEA-->
+
+<div id="fight">
+    <div class="player1">
+        <progress id="life1" max="100" value="70"></progress>
+        <button class="botonP1" onclick="fight(0)"></button>
+
+    </div>
+   
+    <div class="player2">
+        <progress id="life2" max="100" value="70"></progress>
+        <button class="botonP2" onclick="fight(1)"></button>
+
+    </div>
+
+</div>
+
+<!--PANTALLA WINNER-->
     <div class="winner"></div>
 
     
 
-    <script src="js/Players.js"></script>
+    <script src="js/players.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
-
+//Elegir personajes
 let arrayPlayers = [];
-document.getElementById("botonFight").style.visibility = "hidden";
+//document.getElementById("botonFight").style.visibility = "hidden";
 const selectPlayer = (player) => { 
     
     if(arrayPlayers.length < 2){
@@ -16,7 +16,7 @@ const selectPlayer = (player) => {
         console.log(arrayPlayers.length);
 }
 
-
+//Al elegir los personajes se esconden los no selecionados al pulsar start
 
 const botonStart = () => {
 let escogidoKourtney = false;
@@ -55,12 +55,7 @@ if(!escogidoKylie){
 
 document.getElementById("choose").style.visibility = "hidden";
 document.getElementById("botonStart").style.visibility = "hidden";
-document.getElementById("botonFight").style.visibility = "visible";
-
-
-
+//document.getElementById("botonFight").style.visibility = "visible";
 
 }
-
-
 
