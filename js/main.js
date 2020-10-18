@@ -1,10 +1,12 @@
 document.getElementById("winner").style.visibility = "hidden";
+document.getElementById("fight").style.visibility = "hidden";
 
 
 
 //VARIABLES
 let arrayPlayers = [];
 let playersDiv = document.getElementById('players');
+let fighter = document.getElementById('fight');
 let life1 = document.getElementById('life1');
 let life2 = document.getElementById('life2');
 let winnerDiv = document.getElementById('winner');
@@ -14,20 +16,21 @@ let textWinner = document.getElementById('textWin');
 
 
 class Player {
-    constructor(nombre, ataque, defensa) {
+    constructor(nombre, ataque, defensa, foto) {
     
     this.nombre = nombre;
     this.vida = 100;
     this.ataque = ataque;
     this.defensa = defensa;
+    this.foto = foto;
     }
 
 }
     
-    let Kourt = new Player("Kourt",55,50);
-    let Kim = new Player("Kim",55,50);
-    let Khloe = new Player("Khloe",55,50);
-    let Kylie = new Player("Kylie",55,50);
+    let Kourt = new Player("Kourt",55,50,"Kourtney.png");
+    let Kim = new Player("Kim",55,50,"Kim.png");
+    let Khloe = new Player("Khloe",55,50,"Khloe.png");
+    let Kylie = new Player("Kylie",55,50,"Kylie.png");
 
 
 //document.getElementById("botonFight").style.visibility = "hidden";
@@ -99,6 +102,8 @@ if(!escogidoKylie){
 document.getElementById("choose").style.visibility = "hidden";
 document.getElementById("botonStart").style.visibility = "hidden";
 //document.getElementById("botonFight").style.visibility = "visible";
+document.getElementById("fight").style.visibility = "visible";
+
 
 }
 
@@ -128,8 +133,23 @@ document.getElementById("botonStart").style.visibility = "hidden";
 
 
 function finish (win) {
+    fighter.style.visibility = 'hidden';
     playersDiv.style.visibility = 'hidden';
     winnerDiv.style.visibility = 'visible';
     textWinner.textContent += arrayPlayers[win].nombre;
+    
+    if(arrayPlayers[win].nombre == 'Kourt'){
+        document.getElementById("p1").style.visibility = "visible";
+    }
+    if(arrayPlayers[win].nombre == 'Kim'){
+        document.getElementById("p2").style.visibility = "visible";
+    }
+   if(arrayPlayers[win].nombre == 'Khloe'){
+        document.getElementById("p3").style.visibility = "visible";
+    }
+    if(arrayPlayers[win].nombre == 'Kylie'){
+        document.getElementById("p4").style.visibility = "visible";
+    }
+
     
 }

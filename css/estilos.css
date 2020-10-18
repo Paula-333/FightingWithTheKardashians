@@ -7,12 +7,21 @@ body {
     justify-content: center;
     
 }
+
 h4{
     display: flex;
     justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
     color: #dd417c;
 }
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    color: #dd417c;
+}
+
 .nombres{
     display: flex;
     justify-content: space-evenly;
@@ -26,6 +35,7 @@ h4{
     margin: 3em;
     
 }
+
 #players :hover{ 
     filter: grayscale(70%); 
 }
@@ -61,6 +71,7 @@ h4{
     font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .start{
     width: 7em;
     height: 3em;
@@ -70,6 +81,7 @@ h4{
     left: 43em;
     color: #f7bdb3;
 }
+
 .fight{
     width: 7em;
     height: 3em;
@@ -83,31 +95,32 @@ h4{
 #life1{
     position: relative;
     top: -35em;
-    left: 35.5em;
+    left: 33.5em;
 }
 
 #life2{
     position: relative;
     top: -35em;
-    left: 35.5em;
+    left: 33.5em;
     
 }
 
 .botonP1{
     width: 3em;
-    height: 1em;
+    height: 1.5em;
     background-color: #ba4568;
     position: relative;
     top: -42em;
-    left: 43em;
+    left: 40em;
     color: #f7bdb3;
 }
+
 .botonP2{
     width: 3em;
-    height: 1em;
+    height: 1.5em;
     background-color: #ba4568;
     position: relative;
     top: -42em;
-    left: 43em;
+    left: 40em;
     color: #f7bdb3;
 }

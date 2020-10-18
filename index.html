@@ -19,20 +19,20 @@
 
     <!--PANTALLA WINNER-->
     <div id="winner">
-        <h2 id="textWin">The winner is </h2>
+        <h2 id="textWin">You're doing amazing sweetie </h2>
     </div>
 
 <!--PANTALLA-->
 
     <div id="players">
         
-        <div onclick="selectPlayer('Kourt')" class="player1" id="p1"><img src="img/Kourtney.png"></div>
+        <div onclick="selectPlayer('Kourt')" class="player1" id="p1"><h4>KOURT</h4><img src="img/Kourtney.png"></div>
         
-        <div onclick="selectPlayer('Kim')" class="player2" id="p2"><img src="img/Kim.png"></div>
+        <div onclick="selectPlayer('Kim')" class="player2" id="p2"><h4>KIM</h4><img src="img/Kim.png"></div>
         
-        <div onclick="selectPlayer('Khloe')" class="player3" id="p3"><img src="img/Khloe.png"></div>
+        <div onclick="selectPlayer('Khloe')" class="player3" id="p3"><h4>KHLOE</h4><img src="img/Khloe.png"></div>
         
-        <div onclick="selectPlayer('Kylie')" class="player4" id="p4"><img src="img/Kylie.png"></div>
+        <div onclick="selectPlayer('Kylie')" class="player4" id="p4"><h4>KYLIE</h4><img src="img/Kylie.png"></div>
        
     </div>
 
@@ -41,23 +41,16 @@
 <div id="fight">
     <div class="player1">
          <progress id="life1" max="100" value="100"></progress>
-        <button class="botonP1" onclick="fight(0)"></button>
+        <button class="botonP1" onclick="fight(0)">P1</button>
 
     </div>
    
     <div class="player2">
         <progress id="life2" max="100" value="100"></progress>
-        <button class="botonP2" onclick="fight(1)"></button>
+        <button class="botonP2" onclick="fight(1)">P2</button>
 
     </div>
-
-
-
-
-
-    
-
-    
+</div>
     <script src="js/main.js"></script>
 </body>
 </html>
