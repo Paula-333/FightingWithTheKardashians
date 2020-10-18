@@ -1,3 +1,7 @@
+document.getElementById("winner").style.visibility = "hidden";
+
+
+
 //VARIABLES
 let arrayPlayers = [];
 let playersDiv = document.getElementById('players');
