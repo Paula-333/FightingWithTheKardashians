@@ -22,18 +22,9 @@ h2 {
     color: #dd417c;
 }
 
-.nombres{
-    display: flex;
-    justify-content: space-evenly;
-    
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-}
-
 #players{
     display: flex;
-    justify-content: space-evenly;
-    margin: 3em;
-    
+    justify-content: space-evenly;    
 }
 
 #players :hover{ 
@@ -64,14 +55,6 @@ h2 {
 
 }
 
-#textoPlayers{
-    display: flex;
-    justify-content: center;
-    margin: 3em;
-    font-size: large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 .start{
     width: 7em;
     height: 3em;
@@ -81,37 +64,22 @@ h2 {
     left: 43em;
     color: #f7bdb3;
 }
-
-.fight{
-    width: 7em;
-    height: 3em;
-    background-color: #ba4568;
-    position: relative;
-    top: auto;
-    left: 35.5em;
-    color: #f7bdb3;
-}
-
-#life1{
+#fight{
+    display: flex;
+    justify-content: center;
     position: relative;
     top: -35em;
-    left: 33.5em;
+    
 }
 
 #life2{
-    position: relative;
-    top: -35em;
-    left: 33.5em;
-    
+    margin-left: 3em;
 }
 
 .botonP1{
     width: 3em;
     height: 1.5em;
     background-color: #ba4568;
-    position: relative;
-    top: -42em;
-    left: 40em;
     color: #f7bdb3;
 }
 
@@ -119,8 +87,5 @@ h2 {
     width: 3em;
     height: 1.5em;
     background-color: #ba4568;
-    position: relative;
-    top: -42em;
-    left: 40em;
     color: #f7bdb3;
 }
