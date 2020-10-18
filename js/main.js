@@ -1,6 +1,6 @@
+//ESCONDIENDO PANTALLA
 document.getElementById("winner").style.visibility = "hidden";
 document.getElementById("fight").style.visibility = "hidden";
-
 
 
 //VARIABLES
@@ -11,6 +11,7 @@ let life1 = document.getElementById('life1');
 let life2 = document.getElementById('life2');
 let winnerDiv = document.getElementById('winner');
 let textWinner = document.getElementById('textWin');
+
 
 //PERSONAJES
 
@@ -32,8 +33,7 @@ class Player {
     let Khloe = new Player("Khloe",55,50,"Khloe.png");
     let Kylie = new Player("Kylie",55,50,"Kylie.png");
 
-
-//document.getElementById("botonFight").style.visibility = "hidden";
+//SELECIONAR PERSONAJE
 const selectPlayer = (player) => { 
     
     if(arrayPlayers.length < 2){
@@ -101,13 +101,11 @@ if(!escogidoKylie){
 
 document.getElementById("choose").style.visibility = "hidden";
 document.getElementById("botonStart").style.visibility = "hidden";
-//document.getElementById("botonFight").style.visibility = "visible";
 document.getElementById("fight").style.visibility = "visible";
-
 
 }
 
-//JUGADORES
+//PELEA
 
 
 
@@ -130,7 +128,8 @@ document.getElementById("fight").style.visibility = "visible";
                 }
         }
     }    
-
+    
+//PANTALLA WINNER
 
 function finish (win) {
     fighter.style.visibility = 'hidden';

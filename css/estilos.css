@@ -5,7 +5,6 @@ body {
 .letra{
     display: flex;
     justify-content: center;
-    
 }
 
 h4{
@@ -34,25 +33,21 @@ h2 {
 .player1 img {
     width: 9em;
     height: 26em;
-   
 }
 
 .player2 img {
     width: 9em;
     height: 26em;
-
 }
 
 .player3 img {
     width: 10em;
     height: 26em;
-
 }
 
 .player4 img {
     width: 8em;
     height: 26em;
-
 }
 
 .start{
@@ -64,12 +59,12 @@ h2 {
     left: 43em;
     color: #f7bdb3;
 }
+
 #fight{
     display: flex;
     justify-content: center;
     position: relative;
     top: -35em;
-    
 }
 
 #life2{
