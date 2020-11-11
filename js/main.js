@@ -1,4 +1,5 @@
 //ESCONDIENDO PANTALLA
+
 document.getElementById("winner").style.visibility = "hidden";
 document.getElementById("fight").style.visibility = "hidden";
 
